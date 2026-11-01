@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cyber Practice Lab — Complete Ethical Hacking, Cyber Range & Security Academy. 7 Advanced Sides, 56 Security Modules, AI Tools, Virtual Range, and Career Certification.">
+    <title>Cyber Practice Lab — এ টু জেড এথিক্যাল হ্যাকিং ও সাইবার একাডেমি</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Site Header -->
+    <header class="site-header" role="banner">
+        <div class="header-container">
+            <div class="brand">
+                <a href="#dashboard" class="brand-link" aria-label="Cyber Practice Lab Home">
+                    <img src="/assets/logo.svg" alt="Cyber Practice Lab Logo" class="brand-logo" width="44" height="44">
+                    <div class="brand-text">
+                        <span class="brand-title">Cyber Practice Lab</span>
+                        <span class="brand-tag" id="header-tagline">7 Sides • 56 Modules</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Global Search & Quick Filter -->
+            <div class="header-search-wrap">
+                <div class="search-input-box">
+                    <svg class="search-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                    <input type="text" id="global-search-input" placeholder="Search 56 modules (e.g. Reverse Engineering, AI Tutor, AD, Nmap)..." aria-label="Search security modules">
+                    <button id="clear-search-btn" class="btn-clear-search" aria-label="Clear search" style="display:none;">&times;</button>
+                </div>
+            </div>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <!-- Language and Download Actions -->
+            <div class="header-actions">
+                <button id="lang-toggle-btn" class="lang-btn" type="button" role="switch" aria-checked="false" aria-label="Switch to English language">
+                    <span class="lang-indicator" aria-hidden="true">🌐</span>
+                    <span id="lang-btn-text">English</span>
+                </button>
+                <a href="/Cyber_Practice_Lab.apk" class="btn-apk-header" download="Cyber_Practice_Lab.apk" aria-label="Download Android APK">
+                    <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                    <span id="header-apk-text">APK</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Side Tabs Bar -->
+    <nav class="sides-nav-bar" id="primary-nav" role="navigation" aria-label="7 Sides Navigation">
+        <div class="sides-nav-container">
+            <button class="side-tab-btn active" data-tab="dashboard" id="tab-dashboard">
+                <span class="tab-icon">🏠</span>
+                <span class="tab-label" id="lbl-tab-dashboard">ড্যাশবোর্ড</span>
+            </button>
+            <button class="side-tab-btn" data-tab="side1" id="tab-side1">
+                <span class="tab-badge">1</span>
+                <span class="tab-label" id="lbl-tab-side1">অ্যাডভান্সড ল্যাব</span>
+            </button>
+            <button class="side-tab-btn" data-tab="side2" id="tab-side2">
+                <span class="tab-badge">2</span>
+                <span class="tab-label" id="lbl-tab-side2">এআই ফিচারস</span>
+            </button>
+            <button class="side-tab-btn" data-tab="side3" id="tab-side3">
+                <span class="tab-badge">3</span>
+                <span class="tab-label" id="lbl-tab-side3">সাইবার রেঞ্জ</span>
+            </button>
+            <button class="side-tab-btn" data-tab="side4" id="tab-side4">
+                <span class="tab-badge">4</span>
+                <span class="tab-label" id="lbl-tab-side4">রিসার্চ সেন্টার</span>
+            </button>
+            <button class="side-tab-btn" data-tab="side5" id="tab-side5">
+                <span class="tab-badge">5</span>
+                <span class="tab-label" id="lbl-tab-side5">ক্যারিয়ার ও সনদ</span>
+            </button>
+            <button class="side-tab-btn" data-tab="side6" id="tab-side6">
+                <span class="tab-badge">6</span>
+                <span class="tab-label" id="lbl-tab-side6">ডেভসেকঅপস</span>
+            </button>
+            <button class="side-tab-btn" data-tab="side7" id="tab-side7">
+                <span class="tab-badge">7</span>
+                <span class="tab-label" id="lbl-tab-side7">লার্নিং সিস্টেম</span>
+            </button>
+            <button class="side-tab-btn" data-tab="studio" id="tab-studio">
+                <span class="tab-badge" style="background:#00d2ff; color:#020f07; border-color:#00d2ff;">IDE</span>
+                <span class="tab-label" id="lbl-tab-studio">কোড স্টুডিও</span>
+            </button>
+            <button class="side-tab-btn" data-tab="hacklab" id="tab-hacklab">
+                <span class="tab-badge" style="background:#ff0055; color:#fff; border-color:#ff0055;">🔥</span>
+                <span class="tab-label" id="lbl-tab-hacklab">হ্যাকিং কোর্স ও কোড ল্যাব</span>
+            </button>
+            <button class="side-tab-btn" data-tab="foundations" id="tab-foundations">
+                <span class="tab-icon">📚</span>
+                <span class="tab-label" id="lbl-tab-foundations">ভিত্তিপ্রস্তর</span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main-content" role="main">
+        <!-- Search Results View (Hidden by default, shown when query active) -->
+        <section id="search-results-section" class="section-block" style="display:none;" aria-live="polite">
+            <div class="section-container">
+                <div class="section-header">
+                    <div class="section-eyebrow">SEARCH RESULTS</div>
+                    <h2 class="section-title" id="search-results-heading">মডিউল অনুসন্ধান ফলাফল</h2>
+                    <p class="section-desc" id="search-results-count"></p>
+                </div>
+                <div class="modules-grid" id="search-results-grid"></div>
+            </div>
+        </section>
+
+        <!-- DASHBOARD TAB CONTENT -->
+        <div id="content-dashboard" class="tab-content-panel active">
+            <!-- Hero Banner -->
+            <section class="hero-section" aria-labelledby="hero-title">
+                <div class="hero-container">
+                    <div class="hero-badge">
+                        <span class="pulse-dot" aria-hidden="true"></span>
+                        <span id="hero-badge-text">নিরাপদ • বৈধ • ৫৬টি ইন্টারঅ্যাক্টিভ সিকিউরিটি মডিউল</span>
+                    </div>
+                    <h1 id="hero-title" class="hero-title">এ টু জেড এথিক্যাল হ্যাকিং ও প্রফেশনাল সাইবার একাডেমি</h1>
+                    <p id="hero-subtitle" class="hero-subtitle">
+                        আধুনিক সাইবার সিকিউরিটির ৭টি মূল স্তম্ভে দক্ষতা অর্জন করুন: হ্যান্ডস-অন ল্যাব, কৃত্রিম বুদ্ধিমত্তা চালিত সিকিউরিটি ইঞ্জিন, ভার্চুয়াল সাইবার রেঞ্জ, থ্রেট ইন্টেলিজেন্স রিসার্চ, ক্যারিয়ার প্রস্তুতি, ক্লাউড-নেটিভ ডেভসেকঅপস ও অ্যাডাপ্টিভ স্কিল ডায়াগনস্টিকস।
+                    </p>
+
+                    <!-- Golden Rule Warning -->
+                    <div class="golden-banner" role="alert">
+                        <div class="golden-icon" aria-hidden="true">🛡️</div>
+                        <div class="golden-content">
+                            <strong id="hero-rule-prefix">সুবর্ণ নিয়ম:</strong>
+                            <span id="hero-golden-rule">কেবলমাত্র সেই সিস্টেমে সিকিউরিটি টেস্ট করুন যার মালিক আপনি নিজে অথবা যেখানে স্পষ্ট লিখিত অনুমতি রয়েছে।</span>
+                        </div>
+                    </div>
+
+                    <!-- Quick Action Buttons -->
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" id="btn-quick-range" data-nav-target="side3">
+                            <span>সাইবার রেঞ্জ চালু করুন</span>
+                            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                        </button>
+                        <button class="btn btn-secondary" id="btn-quick-ai" data-nav-target="side2">
+                            <span>এআই সিকিউরিটি টুলস</span>
+                            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                        </button>
+                    </div>
+
+                    <!-- Hero Stats -->
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <span class="stat-num" id="stat-val-sides">০৭</span>
+                            <span class="stat-label" id="stat-lbl-sides">মূল স্তম্ভ (Sides)</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num" id="stat-val-modules">৫৬</span>
+                            <span class="stat-label" id="stat-lbl-modules">ইন্টারঅ্যাক্টিভ মডিউল</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num" id="stat-val-labs">০৮</span>
+                            <span class="stat-label" id="stat-lbl-labs">সাইবার স্যান্ডবক্স</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num" id="stat-val-compliance">১০০%</span>
+                            <span class="stat-label" id="stat-lbl-compliance">সাইবার নিরাপত্তা আইন ২০২৩</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7 Sides Overview Grid -->
+            <section class="section-block">
+                <div class="section-container">
+                    <div class="section-header">
+                        <div class="section-eyebrow">SEVEN PILLARS ARCHITECTURE</div>
+                        <h2 class="section-title" id="sides-menu-heading">সাইবার সিকিউরিটির ৭টি মূল স্তম্ভ এক্সপ্লোর করুন</h2>
+                        <p class="section-desc" id="sides-menu-subheading">
+                            নিচের যেকোনো সাইড নির্বাচন করে এর অন্তর্ভুক্ত ইন্টারঅ্যাক্টিভ মডিউল, লাইভ অ্যানালাইজার এবং প্র্যাকটিক্যাল টুলস ব্যবহার করুন।
+                        </p>
+                    </div>
+
+                    <div class="sides-cards-grid" id="sides-overview-grid">
+                        <!-- Rendered dynamically by app.js -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Live Radar Skill Matrix Preview -->
+            <section class="section-block">
+                <div class="section-container">
+                    <div class="radar-preview-card">
+                        <div class="radar-card-left">
+                            <div class="section-eyebrow">COMPETENCY MATRIX</div>
+                            <h3 class="radar-card-title" id="dashboard-radar-title">আপনার রিয়েল-টাইম স্কিল প্রোফাইল</h3>
+                            <p class="radar-card-desc" id="dashboard-radar-desc">
+                                ৮টি গুরুত্বপূর্ণ নিরাপত্তা ক্ষেত্রে আপনার অগ্রগতি পর্যবেক্ষণ করুন। ল্যাব সম্পন্ন করলে ও চ্যালেঞ্জ সমাধান করলে এই স্কিল প্রোফাইল রিয়েল-টাইমে আপডেট হয়।
+                            </p>
+                            <div class="radar-legend-grid" id="radar-legend"></div>
+                            <button class="btn btn-secondary" id="btn-goto-skills" data-nav-target="side7">
+                                <span>লার্নিং সিস্টেম ও কুইজ দেখুন</span>
+                            </button>
+                        </div>
+                        <div class="radar-card-right">
+                            <canvas id="radarCanvas" width="340" height="340" aria-label="8-Axis Cybersecurity Competency Radar Chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- SIDE 1: ADVANCED LABS -->
+        <div id="content-side1" class="tab-content-panel">
+            <section class="section-block">
+                <div class="section-container">
+                    <div class="section-header">
+                        <div class="section-eyebrow">PILLAR 01 • ADVANCED LABS</div>
+                        <h2 class="section-title" id="side1-heading">Side 1 – অ্যাডভান্সড সিকিউরিটি ল্যাবস</h2>
+                        <p class="section-desc" id="side1-subtitle"></p>
+                    </div>
+                    <div class="modules-grid" id="side1-modules-grid"></div>
+                </div>
+            </section>
+        </div>
+
+        <!-- SIDE 2: AI FEATURES -->
+        <div id="content-side2" class="tab-content-panel">
+            <section class="section-block">
+                <div class="section-container">
+                    <div class="section-header">
+                        <div class="section-eyebrow">PILLAR 02 • AI TOOLS</div>
+                        <h2 class="section-title" id="side2-heading">Side 2 – এআই-চালিত সিকিউরিটি ফিচারস</h2>
+                        <p class="section-desc" id="side2-subtitle"></p>
+                    </div>
+                    <div class="modules-grid" id="side2-modules-grid"></div>
+                </div>
+            </section>
+        </div>
+
+        <!-- SIDE 3: CYBER RANGE -->
+        <div id="content-side3" class="tab-content-panel">
+            <section class="section-block">
+                <div class="section-container">
+                    <div class="section-header">
+                        <div class="section-eyebrow">PILLAR 03 • PROFESSIONAL RANGE</div>
+                        <h2 class="section-title" id="side3-heading">Side 3 – প্রফেশনাল সাইবার রেঞ্জ</h2>
+                        <p class="section-desc" id="side3-subtitle"></p>
+                    </div>
+                    <div class="modules-grid" id="side3-modules-grid"></div>
+                </div>
+            </section>
+        </div>
+
+        <!-- SIDE 4: RESEARCH CENTER -->
+        <div id="content-side4" class="tab-content-panel">
+            <section class="section-block">
+                <div class="section-container">
+                    <div class="section-header">
+                        <div class="section-eyebrow">PILLAR 04 • SECURITY RESEARCH</div>
+                        <h2 class="section-title" id="side4-heading">Side 4 – সিকিউরিটি রিসার্চ সেন্টার</h2>
+                        <p class="section-desc" id="side4-subtitle"></p>
+                    </div>
+                    <div class="modules-grid" id="side4-modules-grid"></div>
+                </div>
+            </section>
+        </div>
+
+        <!-- SIDE 5: CAREER & CERTIFICATION -->
+        <div id="content-side5" class="tab-content-panel">
+            <section class="section-block">
+                <div class="section-container">
+                    <div class="section-header">
+                        <div class="section-eyebrow">PILLAR 05 • CAREER & CERTS</div>
+                        <h2 class="section-title" id="side5-heading">Side 5 – ক্যারিয়ার ও সার্টিফিকেশন</h2>
+                        <p class="section-desc" id="side5-subtitle"></p>
+                    </div>
+                    <div class="modules-grid" id="side5-modules-grid"></div>
+                </div>
+            </section>
+        </div>
+
+        <!-- SIDE 6: ADVANCED DEVELOPMENT -->
+        <div id="content-side6" class="tab-content-panel">
+            <section class="section-block">
+                <div class="section-container">
+                    <div class="section-header">
+                        <div class="section-eyebrow">PILLAR 06 • DEVSECOPS & CLOUD-NATIVE</div>
+                        <h2 class="section-title" id="side6-heading">Side 6 – অ্যাডভান্সড ডেভেলপমেন্ট</h2>
+                        <p class="section-desc" id="side6-subtitle"></p>
+                    </div>
+                    <div class="modules-grid" id="side6-modules-grid"></div>
+                </div>
+            </section>
+        </div>
+
+        <!-- SIDE 7: ADVANCED LEARNING SYSTEM -->
+        <div id="content-side7" class="tab-content-panel">
+            <section class="section-block">
+                <div class="section-container">
+                    <div class="section-header">
+                        <div class="section-eyebrow">PILLAR 07 • ADAPTIVE LEARNING</div>
+                        <h2 class="section-title" id="side7-heading">Side 7 – অ্যাডভান্সড লার্নিং সিস্টেম</h2>
+                        <p class="section-desc" id="side7-subtitle"></p>
+                    </div>
+                    <div class="modules-grid" id="side7-modules-grid"></div>
+                </div>
+            </section>
+        <!-- CYBER CODE STUDIO & IDE -->
+        <div id="content-studio" class="tab-content-panel">
+            <section class="section-block ide-section-block">
+                <div class="section-container" style="max-width: 1440px;">
+                    <div class="ide-app-window" id="ide-app-window">
+                        <!-- IDE Top Action Bar -->
+                        <div class="ide-toolbar">
+                            <div class="ide-toolbar-left">
+                                <div class="ide-brand-pill">
+                                    <span class="ide-dot"></span>
+                                    <span class="ide-brand-name">Cyber Code Studio</span>
+                                </div>
+                                <div class="ide-select-wrap">
+                                    <select id="ide-lang-select" class="ide-select" aria-label="Programming Language">
+                                        <option value="python">Python 3.11</option>
+                                        <option value="javascript">JavaScript (Node.js)</option>
+                                        <option value="bash">Bash / Shell</option>
+                                        <option value="c">C / C++ (Clang)</option>
+                                        <option value="go">Go 1.22</option>
+                                        <option value="rust">Rust 1.78</option>
+                                        <option value="php">PHP 8.2</option>
+                                        <option value="sql">SQL (PostgreSQL)</option>
+                                        <option value="solidity">Solidity (Ethereum)</option>
+                                    </select>
+                                </div>
+                                <div class="ide-file-tabs" id="ide-open-tabs"></div>
+                            </div>
+                            <div class="ide-toolbar-right">
+                                <button class="btn btn-sm btn-primary" id="btn-ide-run" title="Execute in Sandbox (Ctrl+Enter)">
+                                    <span>▶</span>
+                                    <span id="lbl-ide-run">Run Code</span>
+                                </button>
+                                <button class="btn btn-sm btn-secondary" id="btn-ide-scan" title="Perform SAST Security Scan">
+                                    <span>🛡️</span>
+                                    <span id="lbl-ide-scan">Security Scan</span>
+                                </button>
+                                <button class="btn btn-sm btn-secondary" id="btn-ide-ai" title="Toggle AI Coding Assistant">
+                                    <span>🤖</span>
+                                    <span id="lbl-ide-ai">AI Assistant</span>
+                                </button>
+                                <button class="btn btn-sm btn-secondary" id="btn-ide-git" title="Git Commit & Clone">
+                                    <span>🐙</span>
+                                    <span id="lbl-ide-git">GitHub</span>
+                                </button>
+                                <button class="btn btn-sm btn-secondary" id="btn-ide-export" title="Export or Download Project">
+                                    <span>⬇</span>
+                                    <span id="lbl-ide-export">Export</span>
+                                </button>
+                                <button class="btn btn-sm btn-secondary" id="btn-ide-save" title="Save to local storage">
+                                    <span>💾</span>
+                                    <span id="lbl-ide-save">Save</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- IDE Main Workspace -->
+                        <div class="ide-body-split">
+                            <!-- Sidebar: File Explorer -->
+                            <aside class="ide-sidebar" id="ide-sidebar">
+                                <div class="ide-sidebar-header">
+                                    <span class="ide-sidebar-title" id="lbl-ide-explorer">PROJECT EXPLORER</span>
+                                    <div class="ide-sidebar-actions">
+                                        <button class="ide-icon-btn" id="btn-ide-new-file" title="Create New File">+</button>
+                                        <button class="ide-icon-btn" id="btn-ide-reset-template" title="Reset Templates">↺</button>
+                                    </div>
+                                </div>
+                                <div class="ide-file-tree" id="ide-file-tree"></div>
+                                <div class="ide-sidebar-info">
+                                    <div class="ide-env-badge">
+                                        <span class="pulse-dot"></span>
+                                        <span>Sandbox: Secure VM</span>
+                                    </div>
+                                    <div class="ide-hotkey-hint">Shortcut: Ctrl + Enter to Run</div>
+                                </div>
+                            </aside>
+
+                            <!-- Center: Code Editor & Dock -->
+                            <div class="ide-center-pane">
+                                <div class="ide-editor-container">
+                                    <div class="ide-line-numbers" id="ide-line-numbers">1</div>
+                                    <textarea id="ide-code-textarea" class="ide-code-textarea" spellcheck="false" autocomplete="off" autocapitalize="off"></textarea>
+                                </div>
+
+                                <!-- Bottom Dock -->
+                                <div class="ide-bottom-dock">
+                                    <div class="ide-dock-tabs">
+                                        <button class="ide-dock-tab active" data-dock="output" id="dock-tab-output">
+                                            <span>📄 Console Output</span>
+                                        </button>
+                                        <button class="ide-dock-tab" data-dock="terminal" id="dock-tab-terminal">
+                                            <span>💻 Integrated Terminal</span>
+                                        </button>
+                                        <button class="ide-dock-tab" data-dock="security" id="dock-tab-security">
+                                            <span>🛡️ Security Diagnostics</span>
+                                            <span class="ide-dock-badge" id="ide-security-badge" style="display:none;">0</span>
+                                        </button>
+                                        <button class="ide-dock-tab" data-dock="debug" id="dock-tab-debug">
+                                            <span>🐞 Debug Console</span>
+                                        </button>
+                                        <button class="ide-dock-clear-btn" id="btn-ide-dock-clear" title="Clear Panel">Clear</button>
+                                    </div>
+
+                                    <div class="ide-dock-content">
+                                        <div class="ide-dock-pane active" id="dock-pane-output">
+                                            <pre class="ide-console-pre" id="ide-console-output">Ready to execute. Press 'Run Code' or Ctrl+Enter.</pre>
+                                        </div>
+
+                                        <div class="ide-dock-pane" id="dock-pane-terminal">
+                                            <div class="ide-term-history" id="ide-term-history">Cyber Practice Lab Integrated Shell (v1.0.0)\nType 'help', 'run', 'ls', 'scan', 'git status', 'export' or bash commands.\n</div>
+                                            <div class="ide-term-input-row">
+                                                <span class="ide-term-prompt">cyber-ide:~$</span>
+                                                <input type="text" id="ide-term-input" class="ide-term-input" placeholder="Enter shell command...">
+                                            </div>
+                                        </div>
+
+                                        <div class="ide-dock-pane" id="dock-pane-security">
+                                            <div id="ide-security-results" class="ide-security-results">
+                                                <div class="ide-clean-state">Click 'Security Scan' above to perform static security analysis (SAST) on the current code.</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="ide-dock-pane" id="dock-pane-debug">
+                                            <div class="ide-debug-panel">
+                                                <div class="ide-debug-row">
+                                                    <strong>Runtime Status:</strong> <span id="ide-debug-status" class="status-ready">Ready (IDLE)</span>
+                                                </div>
+                                                <div class="ide-debug-row">
+                                                    <strong>Memory Usage:</strong> <span id="ide-debug-mem">18.4 MB (Sandboxed)</span>
+                                                </div>
+                                                <div class="ide-debug-row">
+                                                    <strong>Execution Scope:</strong> <span>Isolated Client Virtual Machine</span>
+                                                </div>
+                                                <div class="ide-debug-row">
+                                                    <strong>Last Execution Time:</strong> <span id="ide-debug-time">0 ms</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right: AI Coding Assistant Drawer -->
+                            <aside class="ide-ai-panel" id="ide-ai-panel">
+                                <div class="ide-ai-header">
+                                    <div class="ide-ai-title-wrap">
+                                        <span class="ide-ai-icon">🤖</span>
+                                        <div>
+                                            <strong class="ide-ai-title">AI Coding Assistant</strong>
+                                            <span class="ide-ai-sub">Vulnerability & Code Hardening</span>
+                                        </div>
+                                    </div>
+                                    <button class="ide-icon-btn" id="btn-close-ai" title="Close AI Panel">&times;</button>
+                                </div>
+
+                                <div class="ide-ai-quick-actions">
+                                    <button class="ide-ai-action-chip" data-ai-action="audit">🔍 Audit Security</button>
+                                    <button class="ide-ai-action-chip" data-ai-action="fix">🛡️ Fix Vulnerability</button>
+                                    <button class="ide-ai-action-chip" data-ai-action="explain">💡 Explain Code</button>
+                                    <button class="ide-ai-action-chip" data-ai-action="test">🧪 Generate Tests</button>
+                                    <button class="ide-ai-action-chip" data-ai-action="optimize">⚡ Optimize</button>
+                                </div>
+
+                                <div class="ide-ai-chat-messages" id="ide-ai-chat-messages">
+                                    <div class="ide-ai-msg bot">
+                                        Hello! I am your Cyber Practice Lab AI Coding Assistant. I can analyze your code for vulnerabilities, fix security bugs, write tests, and optimize execution.
+                                    </div>
+                                </div>
+
+                                <div class="ide-ai-input-bar">
+                                    <input type="text" id="ide-ai-input" class="ide-ai-input" placeholder="Ask AI assistant about your code...">
+                                    <button class="btn btn-sm btn-primary" id="btn-ide-ai-send">Ask</button>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- HACKING ACADEMY & LIVE CODE LAB -->
+        <div id="content-hacklab" class="tab-content-panel">
+            <section class="section-block">
+                <div class="section-container" style="max-width: 1440px;">
+                    <div class="section-header">
+                        <div class="section-eyebrow">ETHICAL HACKING ACADEMY & LIVE LAB</div>
+                        <h2 class="section-title" id="hacklab-heading">এথিক্যাল হ্যাকিং মাস্টারক্লাস ও লাইভ কোডিং ল্যাব</h2>
+                        <p class="section-desc" id="hacklab-subtitle">
+                            কালি লিনাক্স, নেট হান্টার, ডার্ক ওয়েব, গ্লোবাল নেটওয়ার্ক এবং এন্টারপ্রাইজ সাইবার ডিফেন্স শিখুন। সাথে রয়েছে রিয়েল-টাইম ভুল শনাক্তকারী ও অটো-রিলোড সমৃদ্ধ ইন্টারেক্টিভ কোড ল্যাব।
+                        </p>
+                    </div>
+
+                    <!-- 5 Deep Learning Tracks Grid -->
+                    <div class="hack-tracks-grid" id="hack-tracks-grid">
+                        <!-- Populated by JS -->
+                    </div>
+
+                    <!-- Interactive Hacking Code Lab Container -->
+                    <div class="hack-lab-wrapper" id="hack-lab-wrapper">
+                        <div class="hack-lab-header">
+                            <div class="hack-lab-title-wrap">
+                                <span class="hack-lab-icon">⚡</span>
+                                <div>
+                                    <h3 class="hack-lab-title" id="hacklab-lab-title">লাইভ হ্যাকিং কোড ল্যাব ও অটো-রিলোড ভেরিফায়ার</h3>
+                                    <p class="hack-lab-desc" id="hacklab-lab-desc">
+                                        নিচের টেক্সট বক্সে আপনার হ্যাকিং স্ক্রিপ্ট লিখুন বা উপরের কোর্স থেকে কোড লোড করুন। কোনো সিনট্যাক্স ভুল থাকলে পাশের প্যানেল আপনাকে কারণ জানিয়ে সাথে সাথে 'রিলোড ও ঠিক করুন' অপশন প্রদান করবে!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hack-lab-actions">
+                                <button class="btn btn-sm btn-primary" id="btn-hacklab-run">
+                                    <span>▶</span>
+                                    <span id="lbl-hacklab-run">কোড রান করুন</span>
+                                </button>
+                                <button class="btn btn-sm btn-secondary" id="btn-hacklab-copy">
+                                    <span>📋</span>
+                                    <span id="lbl-hacklab-copy">কপি</span>
+                                </button>
+                                <button class="btn btn-sm btn-secondary" id="btn-hacklab-download">
+                                    <span>⬇</span>
+                                    <span id="lbl-hacklab-download">ডাউনলোড</span>
+                                </button>
+                                <button class="btn btn-sm btn-secondary" id="btn-hacklab-clear">
+                                    <span>🗑️</span>
+                                    <span>ক্লিয়ার</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Split: Code Editor & Side Auto-Reload Panel -->
+                        <div class="hack-lab-split">
+                            <!-- Left: Hacking Code Text Box -->
+                            <div class="hack-lab-editor-pane">
+                                <div class="hack-editor-bar">
+                                    <span class="hack-editor-label">HACKING SCRIPT EDITOR (Python / Bash / JS)</span>
+                                    <span class="hack-editor-hint">টাইপ করা মাত্রই সাইড প্যানেল স্বয়ংক্রিয়ভাবে ভুল চেক করবে</span>
+                                </div>
+                                <div class="hack-editor-container">
+                                    <div class="hack-line-numbers" id="hacklab-line-numbers">1</div>
+                                    <textarea id="hacklab-code-input" class="hacklab-code-input" spellcheck="false" autocomplete="off" autocapitalize="off" placeholder="Write or paste your ethical hacking code here..."></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Right: Real-time Side Error & Auto-Reload Panel -->
+                            <div class="hack-lab-side-reload-pane" id="hacklab-side-pane">
+                                <div class="side-reload-header">
+                                    <div class="side-reload-badge" id="hacklab-status-badge">
+                                        <span class="status-indicator-dot valid" id="hacklab-status-dot"></span>
+                                        <strong id="hacklab-status-text">কোড সিনট্যাক্স সঠিক ও প্রস্তুত</strong>
+                                    </div>
+                                </div>
+
+                                <div class="side-reload-body" id="hacklab-reload-body">
+                                    <!-- Dynamic clean view -->
+                                    <div class="side-reload-clean" id="hacklab-clean-view">
+                                        <span class="side-reload-big-icon">🛡️</span>
+                                        <h4>কোনো ভুল শনাক্ত হয়নি</h4>
+                                        <p>আপনার কোডটি স্ট্যান্ডার্ড কম্পাইল ও এক্সিকিউশনের জন্য প্রস্তুত। 'কোড রান করুন' বোতামে চাপুন।</p>
+                                    </div>
+
+                                    <!-- Dynamic error view with Reload & Fix -->
+                                    <div class="side-reload-error" id="hacklab-error-view" style="display:none;">
+                                        <div class="error-alert-banner">
+                                            <span class="error-alert-icon">⚠️</span>
+                                            <div>
+                                                <strong id="hacklab-error-title">সিনট্যাক্স ত্রুটি পাওয়া গেছে!</strong>
+                                                <div id="hacklab-error-line" class="error-line-text">লাইন: ১</div>
+                                            </div>
+                                        </div>
+                                        <p class="error-explanation" id="hacklab-error-desc">
+                                            এখানে একটি অনিষ্পন্ন ব্র্যাকেট বা কোটেশন রয়েছে।
+                                        </p>
+                                        <button class="btn btn-primary btn-side-reload-fix" id="btn-hacklab-reload-fix">
+                                            <span>🔄 কোড রিলোড ও ঠিক করুন</span>
+                                        </button>
+                                        <div class="side-reload-hint">এক ক্লিকেই কোড মেরামত হয়ে যাবে এবং আগের কার্যক্ষম অবস্থায় ফিরে আসবে।</div>
+                                    </div>
+                                </div>
+
+                                <div class="side-reload-quick-templates">
+                                    <span class="quick-tmpl-title">কুইক হ্যাকিং টেমপ্লেট লোড করুন:</span>
+                                    <div class="quick-tmpl-chips">
+                                        <button class="quick-tmpl-btn" data-tmpl="kali">কালি পোর্ট স্ক্যানার</button>
+                                        <button class="quick-tmpl-btn" data-tmpl="nethunter">নেট হান্টার BadUSB</button>
+                                        <button class="quick-tmpl-btn" data-tmpl="darkweb">টর ওনিয়ন রাউটার</button>
+                                        <button class="quick-tmpl-btn" data-tmpl="network">TCP হ্যান্ডশেক</button>
+                                        <button class="quick-tmpl-btn" data-tmpl="enterprise">র‍্যানসমওয়্যার ডিফেন্স</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Live Terminal Execution Sandbox -->
+                        <div class="hack-lab-terminal-dock">
+                            <div class="terminal-dock-header">
+                                <span>💻 লাইভ স্যান্ডবক্স টার্মিনাল আউটপুট (Execution Sandbox)</span>
+                                <button class="btn-term-clear" id="btn-hacklab-term-clear">ক্লিয়ার</button>
+                            </div>
+                            <pre class="hack-terminal-pre" id="hacklab-terminal-output">Ready for execution. Click 'কোড রান করুন' (Run Code) above.</pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- FOUNDATIONS & COMPLIANCE -->
+        <div id="content-foundations" class="tab-content-panel">
+            <section class="section-block">
+                <div class="section-container">
+                    <div class="section-header">
+                        <div class="section-eyebrow">PREREQUISITES & COMPLIANCE</div>
+                        <h2 class="section-title" id="foundations-heading">মৌলিক ভিত্তিপ্রস্তর ও আইনি ফ্রেমওয়ার্ক</h2>
+                        <p class="section-desc" id="foundations-subtitle"></p>
+                    </div>
+                    <div class="foundations-cards-grid" id="foundations-cards-grid"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- MODAL / INTERACTIVE WORKSPACE DRAWER -->
+    <div id="interactive-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true" style="display:none;">
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="modal-title-wrap">
+                    <span class="modal-icon" id="modal-icon">⚙️</span>
+                    <div>
+                        <h3 class="modal-title" id="modal-title">Interactive Module</h3>
+                        <span class="modal-badge" id="modal-category">Category</span>
+                    </div>
+                </div>
+                <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Interactive tools inject here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Site Footer -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="/assets/logo.svg" alt="Cyber Practice Lab" width="36" height="36" class="footer-logo">
+                <span class="footer-title">Cyber Practice Lab</span>
+            </div>
+            <p class="footer-copy" id="footer-copy">© ২০২৬ সাইবার প্র্যাকটিস ল্যাব। সম্পূর্ণ এথিক্যাল হ্যাকিং ও সাইবার রেঞ্জ একাডেমি।</p>
+            <div class="footer-links">
+                <button class="footer-link-btn" data-nav-target="dashboard" id="ft-link-dash">ড্যাশবোর্ড</button>
+                <span class="divider">•</span>
+                <button class="footer-link-btn" data-nav-target="side1" id="ft-link-s1">অ্যাডভান্সড ল্যাব</button>
+                <span class="divider">•</span>
+                <button class="footer-link-btn" data-nav-target="side2" id="ft-link-s2">এআই ফিচারস</button>
+                <span class="divider">•</span>
+                <button class="footer-link-btn" data-nav-target="side3" id="ft-link-s3">সাইবার রেঞ্জ</button>
+                <span class="divider">•</span>
+                <a href="/Cyber_Practice_Lab.apk" class="footer-link-btn" download="Cyber_Practice_Lab.apk" id="ft-link-apk">APK ডাউনলোড</a>
+            </div>
+            <p class="footer-note" id="footer-note">ভাষা: বাংলা / English • স্ট্যান্ডার্ড কমপ্লায়েন্ট • ক্ষতিকর কোড মুক্ত</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

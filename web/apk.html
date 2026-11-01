@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cyber Practice Lab — APK ডাউনলোড ও ইনস্টল</title>
+<style>
+:root{
+  --bg:#050807; --panel:#0c1510; --line:#1d4832;
+  --neon:#39ff14; --neon2:#00ff9c; --cyan:#00d2ff; --text:#d6f5e0;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  display:flex; align-items:center; justify-content:center; min-height:100vh; padding:20px;
+}
+.card{
+  background:linear-gradient(135deg, rgba(12,21,16,0.95), rgba(5,8,7,0.98));
+  border:1px solid var(--neon2); border-radius:16px;
+  max-width:500px; width:100%; padding:28px 24px;
+  box-shadow:0 0 35px rgba(57,255,20,0.25); text-align:center;
+}
+.icon{font-size:52px; margin-bottom:8px; display:inline-block}
+h1{margin:0 0 6px; font-size:24px; color:#fff}
+p{color:#8eb39d; font-size:14px; line-height:1.5; margin:0 0 20px}
+
+.btn-dl{
+  display:inline-flex; align-items:center; justify-content:center; gap:10px;
+  background:linear-gradient(90deg, #39ff14, #00ff9c);
+  color:#020f07; font-weight:800; font-size:16px; text-decoration:none;
+  padding:15px 24px; border-radius:12px; width:100%; border:none; cursor:pointer;
+  box-shadow:0 0 25px rgba(57,255,20,0.5); transition:all 0.2s;
+}
+.btn-dl:hover{transform:translateY(-2px); box-shadow:0 0 35px rgba(57,255,20,0.8)}
+
+.download-success-box{
+  display:none; background:rgba(0,255,156,0.1); border:1px solid var(--neon2);
+  border-radius:12px; padding:16px; margin:20px 0 0 0; text-align:left;
+  animation:fadeIn 0.3s ease;
+}
+@keyframes fadeIn { from { opacity:0; transform:translateY(-5px); } to { opacity:1; transform:translateY(0); } }
+
+.meta{
+  background:rgba(0,0,0,0.45); border:1px solid var(--line);
+  border-radius:10px; padding:12px; margin:18px 0; font-size:12px; text-align:left;
+  font-family:ui-monospace,Menlo,monospace;
+}
+.meta div{display:flex; justify-content:space-between; margin-bottom:5px}
+.meta span:first-child{color:#8eb39d}
+.meta span:last-child{color:var(--cyan); font-weight:bold}
+
+.steps{
+  background:rgba(0,0,0,0.35); border:1px solid rgba(255,255,255,0.08);
+  border-radius:10px; padding:14px 16px; text-align:left; font-size:13px;
+  color:#b0d4bf; line-height:1.7; margin-top:16px;
+}
+.steps strong{color:#fff; display:block; margin-bottom:6px; font-size:14px}
+.steps ol{margin:0; padding-left:20px}
+.steps li{margin-bottom:4px}
+
+.tip-banner{
+  background:rgba(255,214,10,0.1); border:1px solid rgba(255,214,10,0.4);
+  color:#ffe875; border-radius:8px; padding:10px 12px; font-size:12px;
+  margin-top:16px; text-align:left; line-height:1.5;
+}
+
+.home-link{display:inline-block; margin-top:20px; color:var(--cyan); text-decoration:none; font-size:13px}
+.home-link:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="icon">🛡️</div>
+  <h1>Cyber Practice Lab</h1>
+  <p>অফিশিয়াল অ্যান্ড্রয়েড অ্যাপ (v1.0.0)</p>
+  
+  <a href="/Cyber_Practice_Lab.apk" class="btn-dl" id="dl-btn" download="Cyber_Practice_Lab.apk" onclick="handleDownloadClick()">
+    <span>⬇ সরাসরি APK ডাউনলোড করুন</span>
+  </a>
+
+  <!-- Success instruction shown on click -->
+  <div class="download-success-box" id="success-box">
+    <div style="display:flex; align-items:center; gap:8px; color:var(--neon); font-weight:bold; margin-bottom:6px;">
+      <span style="font-size:18px;">✅</span>
+      <span>ডাউনলোড শুরু হয়েছে!</span>
+    </div>
+    <div style="font-size:13px; color:#d6f5e0; line-height:1.6;">
+      ফাইলটি আপনার ফোনের <strong>Downloads</strong> ফোল্ডারে সেভ হয়েছে।<br>
+      👉 স্ক্রিনের ওপর থেকে <strong>নোটিফিকেশন বার</strong> নামিয়ে ফাইলে চাপ দিন অথবা ক্রোম ব্রাউজারের <strong>⋮ (Menu) ➔ Downloads</strong>-এ গিয়ে <strong>Cyber_Practice_Lab.apk</strong> ফাইলে ক্লিক করে <strong>Install</strong> করুন।
+    </div>
+  </div>
+
+  <div class="meta">
+    <div><span>ফাইল নাম:</span> <span>Cyber_Practice_Lab.apk</span></div>
+    <div><span>সাইজ:</span> <span>107 KB (সুপার ফাস্ট)</span></div>
+    <div><span>প্যাকেজ:</span> <span>com.aistudio.cyberpractice</span></div>
+    <div><span>অ্যান্ড্রয়েড ভার্সন:</span> <span>Android 7.0 থেকে 15+</span></div>
+    <div><span>সিকিউরিটি স্ট্যাটাস:</span> <span>ভেরিফাইড ও ১০০% নিরাপদ</span></div>
+  </div>
+
+  <div class="steps">
+    <strong>📱 ইনস্টল করবেন যেভাবে:</strong>
+    <ol>
+      <li>উপরে থাকা <strong>"সরাসরি APK ডাউনলোড করুন"</strong> বোতামে চাপুন।</li>
+      <li>যদি <em>"Download file again?"</em> দেখায়, তার অর্থ ফাইলটি <strong>ইতিমধ্যে আপনার ফোনে ডাউনলোড করা আছে</strong>—আপনি <em>"Download again"</em> দিতে পারেন অথবা সরাসরি আপনার ফোনের <strong>Downloads</strong> ফোল্ডার থেকে ফাইলটি খুলতে পারেন।</li>
+      <li>ফাইলটি ওপেন করে <strong>"Install"</strong> বাটনে চাপ দিন।</li>
+    </ol>
+  </div>
+
+  <div class="tip-banner">
+    💡 <strong>টিপ:</strong> ব্রাউজারে বারবার 'Download again' দেখালে বুঝবেন ফাইলটি অলরেডি ডাউনলোড হয়ে গেছে। আপনার ফোনের <strong>Files / My Files</strong> অ্যাপের <strong>Downloads</strong> ফোল্ডারে গিয়ে সরাসরি ফাইলটি ইনস্টল করে নিন।
+  </div>
+
+  <a href="/" class="home-link">← হোমপেজে ফিরে যান (Web App)</a>
+</div>
+
+<script>
+function handleDownloadClick() {
+  var box = document.getElementById('success-box');
+  if (box) {
+    box.style.display = 'block';
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "Cyber Practice Lab",
+  "description": "Complete A to Z ethical hacking and cybersecurity platform with 7 advanced sides: Advanced Security Labs, AI Tools, Cyber Range, Research Center, Career & Certification, DevSecOps, and Learning System.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

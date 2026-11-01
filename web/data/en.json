@@ -1,0 +1,697 @@
+{
+  "meta": {
+    "title": "Cyber Practice Lab — Complete Ethical Hacking, Cyber Range & Security Academy",
+    "tagline": "A to Z Ethical Hacking • 7 Advanced Sides • 56 Security Modules",
+    "description": "Comprehensive bilingual cybersecurity learning platform featuring Advanced Labs, AI Security Tools, Virtual Cyber Range, Threat Intelligence Research, Career Development, DevSecOps, and Real-Time Skill Tracking."
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "side1": "1. Advanced Labs",
+    "side2": "2. AI Features",
+    "side3": "3. Cyber Range",
+    "side4": "4. Research Center",
+    "side5": "5. Career & Certs",
+    "side6": "6. DevSecOps",
+    "side7": "7. Learning System",
+    "studio": "Cyber Code Studio",
+    "foundations": "Foundations",
+    "downloadApk": "Download APK",
+    "switchLang": "বাংলায় দেখুন",
+    "toggleAria": "Switch to Bengali language",
+    "hacklab": "Hacking Course & Lab"
+  },
+  "hero": {
+    "badge": "Safe • Legal • 56 Interactive Security Modules",
+    "title": "A to Z Ethical Hacking & Professional Cyber Academy",
+    "subtitle": "Master modern cybersecurity with 7 specialized pillars: Advanced Hands-on Labs, AI-Assisted Security Engines, Virtual Cyber Ranges, Threat Intelligence, Career Preparation, DevSecOps Security, and Adaptive Skill Diagnostics.",
+    "ctaExplore": "Explore 7 Sides",
+    "ctaRange": "Launch Cyber Range",
+    "goldenRulePrefix": "Golden Rule:",
+    "goldenRule": "Only practice security testing on systems you own or have explicit written permission to assess."
+  },
+  "stats": {
+    "sides": "Core Pillars",
+    "modules": "Interactive Modules",
+    "labs": "Cyber Sandboxes",
+    "compliance": "Cyber Security Act 2023"
+  },
+  "sidesMenu": {
+    "heading": "Explore the 7 Cybersecurity Pillars",
+    "subheading": "Select any side below to access dedicated interactive modules, real-time analyzers, and hands-on security tools."
+  },
+  "side1_labs": {
+    "id": "side1",
+    "title": "Side 1 – Advanced Security Labs",
+    "subtitle": "Deep-dive practical security testing environments covering low-level reverse engineering, corporate enterprise directories, cloud platforms, and distributed systems.",
+    "modules": [
+      {
+        "id": "lab_re",
+        "name": "Reverse Engineering Lab",
+        "icon": "⚙️",
+        "category": "Binary & Malware Analysis",
+        "description": "Inspect compiled binaries, analyze x86/x64 assembly instructions, decompile code to C pseudocode, examine PE/ELF headers, and decrypt obfuscated strings.",
+        "interactiveType": "re_viewer"
+      },
+      {
+        "id": "lab_ad",
+        "name": "Active Directory Security Lab",
+        "icon": "🏢",
+        "category": "Enterprise Windows Security",
+        "description": "Simulate Windows Domain Controllers, understand Kerberos authentication tickets (TGT/TGS), analyze AS-REP Roasting, Kerberoasting attacks, and BloodHound attack paths.",
+        "interactiveType": "ad_sim"
+      },
+      {
+        "id": "lab_netforensics",
+        "name": "Network Forensics Lab",
+        "icon": "📡",
+        "category": "Traffic & Packet Analysis",
+        "description": "Interactive PCAP packet capture analyzer. Filter Wireshark captures, reassemble TCP streams, detect DNS tunneling, and identify ARP spoofing anomalies.",
+        "interactiveType": "pcap_viewer"
+      },
+      {
+        "id": "lab_cloud",
+        "name": "Cloud Penetration Testing Lab",
+        "icon": "☁️",
+        "category": "AWS / Azure / GCP Security",
+        "description": "Audit cloud infrastructure misconfigurations, detect overly permissive IAM policies (wildcard * actions), test S3 bucket ACLs, and exploit IMDSv1 vs IMDSv2 metadata.",
+        "interactiveType": "cloud_audit"
+      },
+      {
+        "id": "lab_iot",
+        "name": "IoT Security Lab",
+        "icon": "📟",
+        "category": "Hardware & Embedded Systems",
+        "description": "Analyze hardware interfaces (UART, JTAG, SPI), extract and inspect firmware filesystem images using Binwalk techniques, and assess unauthenticated MQTT brokers.",
+        "interactiveType": "iot_sim"
+      },
+      {
+        "id": "lab_blockchain",
+        "name": "Blockchain Security Lab",
+        "icon": "⛓️",
+        "category": "Smart Contract Auditing",
+        "description": "Analyze Ethereum smart contract vulnerabilities: Reentrancy attack dynamics, integer arithmetic flaws, flash loan price manipulations, and frontrunning risks.",
+        "interactiveType": "blockchain_sim"
+      },
+      {
+        "id": "lab_container",
+        "name": "Container Security Lab",
+        "icon": "🐳",
+        "category": "Docker & Kubernetes Hardening",
+        "description": "Simulate container breakouts: Privileged Docker execution abuse, hostPath volume mounts, Linux kernel capabilities exploitation, and container image CVE scanning.",
+        "interactiveType": "container_sim"
+      },
+      {
+        "id": "lab_database",
+        "name": "Database Security Lab",
+        "icon": "🗄️",
+        "category": "SQL & NoSQL Vulnerabilities",
+        "description": "Hands-on sandbox for second-order SQL injection, boolean blind SQLi, time-based attacks, MongoDB NoSQL injection payloads, and database privilege isolation.",
+        "interactiveType": "db_sandbox"
+      }
+    ]
+  },
+  "side2_ai": {
+    "id": "side2",
+    "title": "Side 2 – AI-Powered Features",
+    "subtitle": "Intelligent automated security engines providing real-time code auditing, vulnerability assessment, incident root-cause triage, and research assistance.",
+    "modules": [
+      {
+        "id": "ai_tutor",
+        "name": "AI Cybersecurity Tutor",
+        "icon": "🤖",
+        "category": "Interactive Intelligence",
+        "description": "Real-time AI mentor explaining penetration testing methodologies, networking intricacies, and defensive techniques in both English and Bengali.",
+        "interactiveType": "ai_tutor_chat"
+      },
+      {
+        "id": "ai_code_review",
+        "name": "AI Code Security Reviewer",
+        "icon": "🔍",
+        "category": "Automated SAST Engine",
+        "description": "Paste source code in Python, C, PHP, JavaScript, or Solidity. The AI analyzer scans for OWASP Top 10 flaws, CWE citations, severity ratings, and provides secure code diffs.",
+        "interactiveType": "ai_code_audit"
+      },
+      {
+        "id": "ai_vuln_analyzer",
+        "name": "AI Vulnerability Analyzer",
+        "icon": "📊",
+        "category": "CVE & CVSS v3.1 Engine",
+        "description": "Query software components or input vulnerability parameters to calculate exact CVSS v3.1 base metrics (AV, AC, PR, UI, Scope, Impact) and get immediate patching advice.",
+        "interactiveType": "ai_cvss_calc"
+      },
+      {
+        "id": "ai_incident_analyzer",
+        "name": "AI Incident Analyzer",
+        "icon": "🚨",
+        "category": "Log Triage & Threat Mapping",
+        "description": "Input web server, auth, or firewall event logs. The AI classifies the attack vector (Brute Force, SQLi, Credential Stuffing, Ransomware) and maps to MITRE ATT&CK techniques.",
+        "interactiveType": "ai_log_triage"
+      },
+      {
+        "id": "ai_learning_assistant",
+        "name": "AI Learning Assistant",
+        "icon": "🧭",
+        "category": "Adaptive Study Pathway",
+        "description": "Generates a customized cybersecurity learning itinerary tailored to your current background (Software Developer, SysAdmin, Absolute Beginner, or SOC Analyst).",
+        "interactiveType": "ai_learning_advisor"
+      },
+      {
+        "id": "ai_report_gen",
+        "name": "AI Security Report Generator",
+        "icon": "📝",
+        "category": "Executive Reporting",
+        "description": "Generate comprehensive, audit-ready penetration testing and vulnerability reports featuring Executive Summaries, CVSS severity charts, PoC details, and remediation checklists.",
+        "interactiveType": "ai_report_builder"
+      },
+      {
+        "id": "ai_threat_detect",
+        "name": "AI Threat Detection",
+        "icon": "🎯",
+        "category": "Behavioral Anomaly Detector",
+        "description": "Heuristic machine-learning pattern engine that identifies abnormal network traffic bursts, beaconing behaviors, and privilege escalation telemetry.",
+        "interactiveType": "ai_threat_scanner"
+      },
+      {
+        "id": "ai_research_assist",
+        "name": "AI Security Research Assistant",
+        "icon": "🔬",
+        "category": "Knowledge Base Querying",
+        "description": "Instantly cross-reference vulnerability findings across NIST NVD, MITRE ATT&CK, Exploit-DB, and OWASP cheat sheets with synthesized technical summaries.",
+        "interactiveType": "ai_research_lookup"
+      }
+    ]
+  },
+  "side3_range": {
+    "id": "side3",
+    "title": "Side 3 – Professional Cyber Range",
+    "subtitle": "Interactive simulated machines, network attack scenarios, live SIEM dashboards, and competitive CTF arenas running client-side.",
+    "modules": [
+      {
+        "id": "range_linux_vm",
+        "name": "Virtual Linux Machine",
+        "icon": "🐧",
+        "category": "Interactive Terminal",
+        "description": "Full-featured browser Linux bash terminal emulator supporting 40+ commands (ls, cat, grep, nmap, curl, ping, iptables, chmod, ps, whoami, ssh) with virtual filesystem.",
+        "interactiveType": "linux_terminal"
+      },
+      {
+        "id": "range_win_vm",
+        "name": "Virtual Windows Machine",
+        "icon": "🪟",
+        "category": "PowerShell & CMD Simulator",
+        "description": "Simulated Windows command line & PowerShell console: inspect ipconfig, query whoami /priv, view active connections with netstat, and check registry persistence keys.",
+        "interactiveType": "windows_terminal"
+      },
+      {
+        "id": "range_net_attack",
+        "name": "Network Attack Simulation",
+        "icon": "⚡",
+        "category": "Live Attack & Defense Lab",
+        "description": "Simulate SYN floods, Slowloris HTTP DoS, and ARP spoofing attacks. Observe packet rate spikes and apply defensive countermeasures (SYN cookies, rate limiting) in real time.",
+        "interactiveType": "attack_simulator"
+      },
+      {
+        "id": "range_firewall",
+        "name": "Firewall Configuration Lab",
+        "icon": "🧱",
+        "category": "iptables & UFW Rule Studio",
+        "description": "Visual rule generator for Linux iptables and UFW. Build stateful packet filtering chains, configure default DROP policies, and simulate port scanning verdicts.",
+        "interactiveType": "firewall_builder"
+      },
+      {
+        "id": "range_ids_ips",
+        "name": "IDS/IPS Monitoring",
+        "icon": "👁️",
+        "category": "Snort & Suricata Signatures",
+        "description": "Author, validate, and test Snort/Suricata network intrusion detection rules. Send simulated malicious payload packets to trigger alerts and inspect rule matching logic.",
+        "interactiveType": "ids_ips_tester"
+      },
+      {
+        "id": "range_soc",
+        "name": "SOC Operations Center",
+        "icon": "🛡️",
+        "category": "SIEM Dashboard & Triage",
+        "description": "Enterprise Security Operations Center console. Monitor streaming security events, prioritize alert severity, investigate telemetry, and execute incident containment tickets.",
+        "interactiveType": "soc_dashboard"
+      },
+      {
+        "id": "range_ctf",
+        "name": "CTF Competition Arena",
+        "icon": "🚩",
+        "category": "Jeopardy-Style Challenges",
+        "description": "Multi-category cybersecurity capture-the-flag arena (Web, Crypto, Forensics, Reverse, OSINT) with hint unlocks, instant flag verification, and scoreboard score tracking.",
+        "interactiveType": "ctf_arena"
+      },
+      {
+        "id": "range_enterprise",
+        "name": "Enterprise Network Simulator",
+        "icon": "🌐",
+        "category": "Topology & Lateral Movement",
+        "description": "Interactive multi-segment enterprise topology (DMZ, Corporate LAN, Active Directory, Database Vault). Simulate boundary firewalls, pivot vectors, and defense-in-depth.",
+        "interactiveType": "topology_viewer"
+      }
+    ]
+  },
+  "side4_research": {
+    "id": "side4",
+    "title": "Side 4 – Security Research Center",
+    "subtitle": "Advanced intelligence gathering, digital forensics frameworks, threat actor profiling, and vulnerability research repositories.",
+    "modules": [
+      {
+        "id": "res_threat_intel",
+        "name": "Threat Intelligence Center",
+        "icon": "🕵️",
+        "category": "APT Profiles & IOC Feeds",
+        "description": "Explore threat actor dossiers (APT28, APT29, Lazarus, FIN7), investigate Indicators of Compromise (IPs, MD5/SHA256, domains), and navigate MITRE ATT&CK enterprise matrices.",
+        "interactiveType": "threat_intel_viewer"
+      },
+      {
+        "id": "res_osint",
+        "name": "OSINT Research Lab",
+        "icon": "🌐",
+        "category": "Open-Source Intelligence",
+        "description": "Comprehensive passive reconnaissance workbench: domain WHOIS lookup simulator, DNS enumeration, email footprinting, and username search across public networks.",
+        "interactiveType": "osint_toolkit"
+      },
+      {
+        "id": "res_malware",
+        "name": "Malware Analysis Lab",
+        "icon": "🦠",
+        "category": "Static & Dynamic Triage",
+        "description": "Inspect Portable Executable (PE) headers, analyze section entropy to detect packers, calculate Import Hash (ImpHash), and review sandboxed dynamic execution behavioral reports.",
+        "interactiveType": "malware_triage"
+      },
+      {
+        "id": "res_vuln_lab",
+        "name": "Vulnerability Research Lab",
+        "icon": "🔬",
+        "category": "CVE Database & Patch Diffing",
+        "description": "Searchable vulnerability repository with CVSS breakdowns, exploit proof-of-concept mechanics, and side-by-side patch diff analysis showing vulnerable vs fixed source code.",
+        "interactiveType": "vuln_research_db"
+      },
+      {
+        "id": "res_bugbounty",
+        "name": "Bug Bounty Workspace",
+        "icon": "💰",
+        "category": "Methodology & Scope Organizer",
+        "description": "Hacker methodology checklists (subdomain enumeration, parameter analysis, IDOR hunting), standard vulnerability submission templates, and estimated bounty calculators.",
+        "interactiveType": "bugbounty_hub"
+      },
+      {
+        "id": "res_forensics",
+        "name": "Digital Investigation Center",
+        "icon": "⚖️",
+        "category": "DFIR & Evidence Preservation",
+        "description": "Digital Forensics and Incident Response workspace: Chain of Custody record generator, forensic event timeline creator, and Volatility memory analysis syntax reference.",
+        "interactiveType": "forensics_center"
+      },
+      {
+        "id": "res_tools_lib",
+        "name": "Security Tools Library",
+        "icon": "🧰",
+        "category": "40+ Tool Cheat-Sheets",
+        "description": "Syntax reference and practical command examples for Nmap, Burp Suite, Metasploit, Wireshark, Hashcat, John the Ripper, Hydra, Sqlmap, Ghidra, and Gobuster.",
+        "interactiveType": "tools_cheatsheets"
+      },
+      {
+        "id": "res_exploit_detect",
+        "name": "Exploit Detection & Analysis",
+        "icon": "🛡️",
+        "category": "YARA & Sigma Rule Testing",
+        "description": "Write and validate YARA rules for file identification and Sigma rules for SIEM event correlation. Test rules against sample malicious byte patterns.",
+        "interactiveType": "yara_tester"
+      }
+    ]
+  },
+  "side5_career": {
+    "id": "side5",
+    "title": "Side 5 – Career & Certification",
+    "subtitle": "Professional advancement pathways, diagnostic skill assessments, verifiable digital credentials, and interview readiness tools.",
+    "modules": [
+      {
+        "id": "car_roadmap",
+        "name": "Cybersecurity Career Roadmap",
+        "icon": "🗺️",
+        "category": "Career Path Exploration",
+        "description": "Interactive career tracks (SOC Analyst, Penetration Tester, Incident Responder, Cloud Security Engineer, CISO) with salary insights, required certs (Security+, CEH, OSCP), and milestones.",
+        "interactiveType": "career_pathways"
+      },
+      {
+        "id": "car_assessment",
+        "name": "Professional Skill Assessment",
+        "icon": "🎯",
+        "category": "Diagnostic Testing",
+        "description": "Diagnostic 10-question assessment measuring Network, Linux, Web Security, Cryptography, and Forensics. Generates an immediate visual score breakdown and gap analysis.",
+        "interactiveType": "diagnostic_assessment"
+      },
+      {
+        "id": "car_cert_verify",
+        "name": "Certificate Verification",
+        "icon": "📜",
+        "category": "Digital Credentials",
+        "description": "Generate and verify cryptographically hashed Digital Certificates of Completion. Enter certificate IDs to confirm authenticity, student name, issue timestamp, and score.",
+        "interactiveType": "cert_engine"
+      },
+      {
+        "id": "car_resume",
+        "name": "Resume Builder",
+        "icon": "📄",
+        "category": "Cybersecurity CV Studio",
+        "description": "Tailored Cybersecurity Resume Builder with pre-loaded industry keywords (SIEM, EDR, NIST, PTES, OWASP, ISO 27001). Edit, preview, and print/export clean resumes.",
+        "interactiveType": "resume_builder"
+      },
+      {
+        "id": "car_portfolio",
+        "name": "Portfolio Builder",
+        "icon": "💼",
+        "category": "Project & Writeup Showcase",
+        "description": "Build an impressive public-facing portfolio documenting completed labs, CTF writeups, published CVE discoveries, and open-source security tool contributions.",
+        "interactiveType": "portfolio_studio"
+      },
+      {
+        "id": "car_interview_prep",
+        "name": "Interview Preparation",
+        "icon": "💡",
+        "category": "Question Bank & Best Practices",
+        "description": "Curated bank of top 50 cybersecurity interview questions and model answers in English & Bengali across Junior, Mid, and Senior engineering tiers.",
+        "interactiveType": "interview_qa_bank"
+      },
+      {
+        "id": "car_interview_sim",
+        "name": "Technical Interview Simulator",
+        "icon": "⏱️",
+        "category": "Timed Mock Interview",
+        "description": "Simulated live technical screening with timed question prompts, candidate answer evaluation, and detailed scoring feedback on clarity and technical accuracy.",
+        "interactiveType": "mock_interview_sim"
+      },
+      {
+        "id": "car_leaderboard",
+        "name": "Student Leaderboard",
+        "icon": "🏆",
+        "category": "XP & Rank Hall of Fame",
+        "description": "Gamified leaderboard showcasing top students, earned experience points (XP), unlocked badges, and progression ranks from Novice Recruit to Grand Sentinel.",
+        "interactiveType": "leaderboard_view"
+      }
+    ]
+  },
+  "side6_dev": {
+    "id": "side6",
+    "title": "Side 6 – Advanced Development",
+    "subtitle": "Secure software engineering, DevSecOps automated pipelines, cloud-native container orchestration defense, and zero-trust architectures.",
+    "modules": [
+      {
+        "id": "dev_secops",
+        "name": "DevSecOps Playground",
+        "icon": "🔄",
+        "category": "CI/CD Pipeline Security",
+        "description": "Simulate automated security gates in CI/CD pipelines: Pre-commit secret scanning (TruffleHog), SAST code analysis, SCA dependency checks, container auditing, and DAST testing.",
+        "interactiveType": "devsecops_pipeline"
+      },
+      {
+        "id": "dev_k8s",
+        "name": "Kubernetes Security Lab",
+        "icon": "☸️",
+        "category": "Cluster & Pod Security",
+        "description": "Audit Kubernetes security policies: Evaluate Pod Security Standards (Privileged vs Baseline vs Restricted), configure NetworkPolicies, and inspect RBAC role bindings.",
+        "interactiveType": "k8s_auditor"
+      },
+      {
+        "id": "dev_zerotrust",
+        "name": "Zero Trust Security Lab",
+        "icon": "🔒",
+        "category": "Architecture & Micro-Segmentation",
+        "description": "Design identity-aware Zero Trust architectures: Enforce multi-factor context, continuous device health verification, software-defined perimeters, and least-privilege access.",
+        "interactiveType": "zerotrust_designer"
+      },
+      {
+        "id": "dev_api_analyzer",
+        "name": "API Security Analyzer",
+        "icon": "🔌",
+        "category": "OWASP API Top 10",
+        "description": "Interactive API security testing console. Test endpoints against Broken Object Level Authorization (BOLA/IDOR), lack of rate limiting, mass assignment, and JWT flaws.",
+        "interactiveType": "api_sec_tester"
+      },
+      {
+        "id": "dev_code_playground",
+        "name": "Secure Code Playground",
+        "icon": "💻",
+        "category": "Vulnerable vs Secure Diff",
+        "description": "Side-by-side interactive code playground showing real vulnerable implementations alongside remediated secure code for SQLi, XSS, and command injection in Python/JS.",
+        "interactiveType": "secure_code_diff"
+      },
+      {
+        "id": "dev_privacy",
+        "name": "Privacy Protection Center",
+        "icon": "🛡️",
+        "category": "Data Protection & Regulations",
+        "description": "Understand GDPR, ISO 27701, and Bangladesh's Cyber Security Act 2023 compliance. Test data pseudonymization, hashing techniques, and retention schedules.",
+        "interactiveType": "privacy_reg_guide"
+      },
+      {
+        "id": "dev_architecture",
+        "name": "Security Architecture Lab",
+        "icon": "📐",
+        "category": "STRIDE Threat Modeling",
+        "description": "Interactive Threat Modeling studio based on Microsoft STRIDE (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege).",
+        "interactiveType": "stride_modeler"
+      },
+      {
+        "id": "dev_incident_sim",
+        "name": "Incident Response Simulator",
+        "icon": "🚨",
+        "category": "Ransomware Containment Playbook",
+        "description": "Step-by-step crisis containment exercise: Identify compromised endpoints, isolate infected VLANs, analyze memory dumps, restore verified backups, and draft executive briefings.",
+        "interactiveType": "ir_playbook_sim"
+      }
+    ]
+  },
+  "side7_learning": {
+    "id": "side7",
+    "title": "Side 7 – Advanced Learning System",
+    "subtitle": "Gamified, real-time analytics-driven educational ecosystem with skill radar charts, team CTF rooms, interactive tutorials, and reward badges.",
+    "modules": [
+      {
+        "id": "learn_path",
+        "name": "Personalized Learning Path",
+        "icon": "🎯",
+        "category": "Adaptive Curriculum",
+        "description": "Choose your primary goal (Defensive Blue Team, Offensive Red Team, Cloud Security, DevSecOps) to generate an optimized sequence of labs, quizzes, and tutorials.",
+        "interactiveType": "learning_path_wizard"
+      },
+      {
+        "id": "learn_quiz",
+        "name": "Advanced Quiz System",
+        "icon": "❓",
+        "category": "Comprehensive Testing",
+        "description": "Interactive quiz engine featuring categorized questions across Networking, Linux, Web, Cryptography, and Incident Response with instant rationale feedback.",
+        "interactiveType": "interactive_quiz_engine"
+      },
+      {
+        "id": "learn_skills",
+        "name": "Real-Time Skill Tracking",
+        "icon": "📈",
+        "category": "8-Axis Radar & Matrix",
+        "description": "Dynamic visual radar spider chart calculating your real-time mastery across 8 security domains: Network, Linux, Web, Crypto, Forensics, Cloud, Defense, and Exploitation.",
+        "interactiveType": "radar_skill_chart"
+      },
+      {
+        "id": "learn_challenges",
+        "name": "Practical Skill Challenges",
+        "icon": "🧩",
+        "category": "Hands-on Puzzles",
+        "description": "Solve 6 hands-on security puzzles: Decode multi-encoded strings (Base64/ROT13/Hex), reorder network handshake steps, craft bypass SQL queries, and triage malicious logs.",
+        "interactiveType": "skill_puzzle_arena"
+      },
+      {
+        "id": "learn_team_ctf",
+        "name": "Team-Based CTF",
+        "icon": "👥",
+        "category": "Collaborative Hackathon",
+        "description": "Create or join custom CTF team lobbies with room codes, track collective team scoreboards, and collaborate on solving multi-stage security flags.",
+        "interactiveType": "team_ctf_lobby"
+      },
+      {
+        "id": "learn_tutorials",
+        "name": "Interactive Tutorials",
+        "icon": "📖",
+        "category": "Step-by-Step Guided Walkthroughs",
+        "description": "Visual guided walkthroughs: How Burp Suite intercepts HTTP requests, how TCP SYN scanning operates at the packet level, and how stack buffer overflows work.",
+        "interactiveType": "visual_walkthroughs"
+      },
+      {
+        "id": "learn_analytics",
+        "name": "Progress Analytics",
+        "icon": "📊",
+        "category": "Study Metrics & Velocity",
+        "description": "Comprehensive learner metrics: Total study sessions, completed labs, daily learning streak counter, quiz accuracy rates, and estimated career readiness score.",
+        "interactiveType": "analytics_dashboard"
+      },
+      {
+        "id": "learn_achievements",
+        "name": "Achievement & Rewards System",
+        "icon": "🎖️",
+        "category": "Unlockable Badges & Ranks",
+        "description": "Earn 12 prestigious cybersecurity badges (Terminal Novice, Packet Whisperer, Bug Hunter, SOC Guardian, Cryptographer) and advance through 5 mastery tiers.",
+        "interactiveType": "badges_showcase"
+      }
+    ]
+  },
+  "studio_module": {
+    "title": "Cyber Code Studio & Security IDE",
+    "subtitle": "Professional multi-language code editor with AI Coding Assistant, live security scanning, sandboxed execution, integrated terminal, Git workflow, and project management.",
+    "actions": {
+      "run": "Run Code",
+      "scan": "Security Scan",
+      "aiAssist": "AI Assistant",
+      "save": "Save Project",
+      "export": "Export",
+      "github": "Git / GitHub",
+      "newFile": "New File",
+      "deleteFile": "Delete File",
+      "resetSample": "Reset Template"
+    },
+    "tabs": {
+      "output": "Console Output",
+      "terminal": "Integrated Terminal",
+      "security": "Security Diagnostics (SAST)",
+      "debug": "Debug Console"
+    }
+  },
+  "foundations_summary": {
+    "title": "Core Foundations & Legal Compliance",
+    "subtitle": "Essential prerequisites: networking protocols, Linux CLI, OWASP Top 10, Kali setup, and national cyber legal frameworks.",
+    "links": [
+      {
+        "id": "fnd_roadmap",
+        "title": "4-Stage Foundations Roadmap",
+        "desc": "Step-by-step career path with 24 saved checklist items."
+      },
+      {
+        "id": "fnd_labs",
+        "title": "Legal Practice Labs",
+        "desc": "Official training platforms: TryHackMe, Hack The Box, PortSwigger, Juice Shop, DVWA."
+      },
+      {
+        "id": "fnd_tools",
+        "title": "Kali Linux & VM Guide",
+        "desc": "Official kali.org documentation and step-by-step VirtualBox / VMware setup."
+      },
+      {
+        "id": "fnd_concepts",
+        "title": "Deep Web & Tor Concepts",
+        "desc": "Internet layers, 3-hop onion routing, and privacy principles (no illegal links)."
+      },
+      {
+        "id": "fnd_ethics",
+        "title": "Ethics & Cyber Security Act 2023",
+        "desc": "Penal provisions of Bangladesh Cyber Security Act 2023 and the Golden Rule."
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2026 Cyber Practice Lab. Complete Ethical Hacking & Cyber Range Academy.",
+    "bilingualNote": "Language: English / বাংলা • Standards Compliant • Zero Harmful Code",
+    "links": {
+      "dashboard": "Dashboard",
+      "apk": "Download APK",
+      "law": "Cyber Security Act 2023",
+      "kali": "Kali Linux Docs"
+    }
+  },
+  "hacklab_section": {
+    "title": "Ethical Hacking Masterclass & Real-time Code Lab",
+    "subtitle": "Learn Kali Linux, NetHunter, Dark Web, Global Internet Architecture, and Enterprise Cyber Attack Defense. Includes an interactive code lab with live error detection and auto-reload.",
+    "tracks": [
+      {
+        "id": "track_kali",
+        "title": "1. Kali Linux Mastery & Core Toolsets",
+        "badge": "OSINT & Pentest OS",
+        "icon": "🐉",
+        "summary": "How Kali Linux works, official docs (kali.org), and underlying architecture.",
+        "details": "Kali Linux is a Debian-derived Linux distribution tailored for digital forensics and penetration testing. It comes pre-installed with over 600 security tools (Nmap, Metasploit, Wireshark, John the Ripper, Burp Suite, Aircrack-ng). It runs safely inside VirtualBox, VMware, or live USB boot for isolated ethical learning.",
+        "skills": [
+          "Linux CLI & Permissions",
+          "Nmap Port & Service Scanning",
+          "Metasploit Exploitation Framework",
+          "Wireshark Packet Analysis"
+        ],
+        "sampleCodeName": "kali_port_scanner.py",
+        "sampleCode": "# Kali Linux — Custom Port & Service Grabber Script\nimport socket\n\ntarget = '127.0.0.1'\nports = [21, 22, 80, 443, 8080]\nprint(f'[*] Kali Linux scan initiated for target: {target}')\nfor p in ports:\n    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    s.settimeout(0.5)\n    res = s.connect_ex((target, p))\n    if res == 0:\n        print(f'[+] Port {p}/tcp OPEN! Service active.')\n    else:\n        print(f'[-] Port {p}/tcp closed.')\n    s.close()\nprint('[✓] Port scan completed successfully.')"
+      },
+      {
+        "id": "track_nethunter",
+        "title": "2. Kali NetHunter Mobile Pentesting",
+        "badge": "Mobile Cyber Testing",
+        "icon": "📱",
+        "summary": "How Kali NetHunter operates on Android devices and wireless audit methodologies.",
+        "details": "Kali NetHunter is the open-source Android penetration testing platform. Powered by a custom kernel and Chroot environment, it supports BadUSB HID keyboard emulation attacks, Mana Rogue Wi-Fi access points, and RF/Bluetooth audits to evaluate mobile and physical hardware security defenses.",
+        "skills": [
+          "BadUSB HID Keyboard Injection & Defense",
+          "WPA2/WPA3 Wi-Fi Security Audits",
+          "OTG External Wireless Adapter Configuration"
+        ],
+        "sampleCodeName": "nethunter_hid_guard.py",
+        "sampleCode": "# Kali NetHunter — BadUSB Keystroke Injection Detector & Guard\nimport time\n\ndef monitor_usb_devices(device_id):\n    print(f'[*] NetHunter monitoring USB ID: {device_id}')\n    unusual_keystrokes_per_sec = 180\n    if unusual_keystrokes_per_sec > 100:\n        print('[!] [ALERT] BadUSB HID Injection detected! Disabling rogue keyboard.')\n        return False\n    return True\n\nstatus = monitor_usb_devices('USB-HID-KEYBOARD-99')\nprint(f'[✓] Defense Status: Host secured (Blocked: {not status})')"
+      },
+      {
+        "id": "track_darkweb",
+        "title": "3. Deep Web, Dark Web & Tor Network Mechanics",
+        "badge": "Privacy & Threat Intel",
+        "icon": "🧅",
+        "summary": "Differences between Surface, Deep, and Dark Web, 3-Hop Tor onion routing, and legal safety.",
+        "details": "The Surface Web represents only ~4% of indexed internet data. The Deep Web comprises ~90% (private databases, banking portals, cloud drives). The Dark Web accounts for ~6%, accessed via Tor's 3-hop onion routing (Guard, Middle, and Exit relays) with multi-layered cryptography. It carries high risks of fraud, scams, and malware. Under Bangladesh Cyber Security Act 2023, unauthorized attacks are illegal.",
+        "skills": [
+          "3-Hop Onion Routing Mechanics",
+          "DNS & IP Leak Prevention",
+          "Cyber Security Act 2023 Compliance",
+          "Anonymity Protocols & Threat Intelligence"
+        ],
+        "sampleCodeName": "tor_onion_proxy.py",
+        "sampleCode": "# Tor Network — 3-Hop Onion Routing & IP Leak Checker\ndef verify_tor_circuit(guard, middle, exit_node):\n    print('=== Tor 3-Hop Onion Routing Circuit Verification ===')\n    print(f'[1] Guard Relay:  {guard} [Layer 3 Encrypted]')\n    print(f'[2] Middle Relay: {middle} [Layer 2 Encrypted]')\n    print(f'[3] Exit Node:    {exit_node} [Layer 1 Decrypted]')\n    print('[✓] Client origin IP completely hidden and shielded.')\n    print('[!] Safety Rule: Never visit illegal or unverified destinations.')\n\nverify_tor_circuit('104.244.72.115:9001', '185.220.101.4:443', '198.98.56.12:80')"
+      },
+      {
+        "id": "track_network",
+        "title": "4. Global Network, Internet & Packet Architecture",
+        "badge": "TCP/IP & Infrastructure",
+        "icon": "🌐",
+        "summary": "Global internet backbones, submarine fiber, BGP routing, and packet filtering.",
+        "details": "The global internet relies on submarine optical fiber cables and Autonomous Systems (AS) routing packets via BGP. Transmission operates through the OSI 7-layer and TCP/IP protocol stack, where connections are synchronized via the TCP 3-Way Handshake (SYN -> SYN-ACK -> ACK). Firewalls and IDS/IPS systems inspect packet headers to filter unauthorized exploits.",
+        "skills": [
+          "OSI 7-Layer & TCP/IP Protocol Stack",
+          "DNS Poisoning & Spoofing Mitigation",
+          "BGP Route Hijack Detection",
+          "Stateful Firewall Rule Implementation"
+        ],
+        "sampleCodeName": "tcp_handshake_sim.py",
+        "sampleCode": "# Global Network — TCP 3-Way Handshake & Packet Tracker\ndef simulate_tcp_handshake(src_ip, dst_ip, port):\n    print(f'[*] Client ({src_ip}) -> Server ({dst_ip}:{port})')\n    print('[Step 1] SYN Packet Dispatched (Seq=1000)')\n    print('[Step 2] SYN-ACK Received from Host (Seq=5000, Ack=1001)')\n    print('[Step 3] ACK Returned (Seq=1001, Ack=5001)')\n    print('[✓] TCP handshake verified! Session securely active.')\n\nsimulate_tcp_handshake('192.168.1.45', '93.184.216.34', 443)"
+      },
+      {
+        "id": "track_enterprise",
+        "title": "5. Business Cyber Attack Defense & Enterprise Data Protection",
+        "badge": "Enterprise Defense & Incident Response",
+        "icon": "🏢",
+        "summary": "Incident containment, ransomware mitigation, and safeguarding enterprise assets.",
+        "details": "When an enterprise suffers a cyber breach, immediate containment is critical: (1) Isolate infected nodes from the subnet to prevent lateral movement, (2) Capture volatile memory and syslog dumps for forensic analysis, (3) Restore operations from immutable offline backups, (4) Invalidate domain credentials. Prevention relies on Zero Trust Network Architecture (ZTNA), Multi-Factor Authentication (MFA), and 24/7 SOC monitoring. White hat ethical hackers defend infrastructures legally.",
+        "skills": [
+          "Incident Response (Containment, Eradication, Recovery)",
+          "Ransomware Defense & Immutable Backups",
+          "Zero Trust Architecture (ZTNA & RBAC)",
+          "White Hat vs Black Hat Ethical Roadmap"
+        ],
+        "sampleCodeName": "incident_response_guard.py",
+        "sampleCode": "# Enterprise Security — Ransomware & Lateral Movement Containment Guard\ndef trigger_incident_containment(server_id, threat_level):\n    print(f'[*] [SOC Incident Response Team Active] Target: {server_id}')\n    if threat_level == 'CRITICAL':\n        print('[!] High-severity cyber attack identified! Activating network isolation...')\n        print('[+] Applying kernel firewall drop rule: iptables -A INPUT -j DROP')\n        print('[+] Encrypted backup integrity confirmed & forensic snapshot captured.')\n        print('[✓] Enterprise corporate data secured within isolated vault.')\n    else:\n        print('[*] Normal telemetry monitoring active.')\n\ntrigger_incident_containment('SRV-FINANCE-DB-01', 'CRITICAL')"
+      }
+    ],
+    "lab": {
+      "title": "Live Hacking Code Lab & Real-time Auto-Reload",
+      "desc": "Write your security code below or load templates from any lesson above. If syntax or runtime errors occur, the live side panel highlights the line and gives you an instant 'Reload & Fix' button!",
+      "runBtn": "Run Code",
+      "reloadBtn": "Reload & Fix Code",
+      "copyBtn": "Copy Code",
+      "downloadBtn": "Download Code",
+      "statusValid": "Code Syntax Valid & Ready",
+      "statusError": "Errors Detected — Reload or Fix",
+      "terminalHeading": "Execution Sandbox Terminal"
+    }
+  }
+}
